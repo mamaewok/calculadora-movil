@@ -1,0 +1,155 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <EditText
+        android:id="@+id/Pantalla"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:layout_height="70dp"
+        android:inputType="numberDecimal"
+        android:text="0" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp" >
+
+        <TableRow>
+
+            <com.example.calculadoramovil.ButtonNumerico
+                android:id="@+id/Btn1"
+                android:layout_width="80dp"
+                android:layout_height="65dp"
+                android:textSize="40sp"
+                android:text="@string/Btn1" />
+
+            <com.example.calculadoramovil.ButtonNumerico
+                android:id="@+id/Btn2"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:textSize="40sp"
+                android:text="@string/Btn2" />
+
+            <com.example.calculadoramovil.ButtonNumerico
+                android:id="@+id/Btn3"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:textSize="40sp"
+                android:text="@string/Btn3" />
+
+            <com.example.calculadoramovil.ButtonOperacion
+                android:id="@+id/BtnMas"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:textSize="40sp"
+                android:text="@string/BtnMas" />
+        </TableRow>
+
+        <TableRow>
+
+            <com.example.calculadoramovil.ButtonNumerico
+                android:id="@+id/Btn4"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:textSize="40sp"
+                android:text="@string/Btn4" />
+
+            <com.example.calculadoramovil.ButtonNumerico
+                android:id="@+id/Btn5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="40sp"
+                android:text="@string/Btn5" />
+
+            <com.example.calculadoramovil.ButtonNumerico
+                android:id="@+id/Btn6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="40sp"
+                android:text="@string/Btn6" />
+
+            <com.example.calculadoramovil.ButtonOperacion
+                android:id="@+id/BtnMenos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="40sp"
+                android:text="@string/BtnMenos" />
+        </TableRow>
+
+        <TableRow>
+
+            <com.example.calculadoramovil.ButtonNumerico
+                android:id="@+id/Btn7"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:textSize="40sp"
+                android:text="@string/Btn7" />
+
+            <com.example.calculadoramovil.ButtonNumerico
+                android:id="@+id/Btn8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="40sp"
+                android:text="@string/Btn8" />
+
+            <com.example.calculadoramovil.ButtonNumerico
+                android:id="@+id/Btn9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="40sp"
+                android:text="@string/Btn9" />
+
+            <com.example.calculadoramovil.ButtonOperacion
+                android:id="@+id/BtnMulti"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="40sp"
+                android:text="@string/BtnMulti" />
+        </TableRow>
+
+        <TableRow>
+
+            <com.example.calculadoramovil.ButtonNumerico
+                android:id="@+id/BtnPunto"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:textSize="40sp"
+                android:text="@string/BtnPunto" />
+
+            <com.example.calculadoramovil.ButtonNumerico
+                android:id="@+id/Btn0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="40sp"
+                android:text="@string/Btn0" />
+
+            <com.example.calculadoramovil.ButtonOperacion
+                android:id="@+id/BtnC"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="40sp"
+                android:text="@string/BtnC" />
+
+            <com.example.calculadoramovil.ButtonOperacion
+                android:id="@+id/BtnDiv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="40sp"
+                android:text="@string/BtnDiv" />
+        </TableRow>
+
+        <com.example.calculadoramovil.ButtonOperacion
+            android:id="@+id/BtnIgual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/BtnIgual"
+            android:textSize="40sp" />
+
+    </TableLayout>
+
+</LinearLayout>
