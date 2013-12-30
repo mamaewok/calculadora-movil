@@ -86,11 +86,14 @@ public class CalculadoraActivity extends Activity implements View.OnClickListene
 	 * @param digito
 	 */
 		public void numeroPulsado(String digito) {
-			if (pantalla.getText().equals("0") || nuevaOperacion) 
+			if (pantalla.getText().equals("0") || nuevaOperacion){ 
 				pantalla.setText(digito);
-			else {
-				pantalla.setText(pantalla.getText() + digito);
-			}
+				if(digito.equals(".")){
+				 pantalla.setText("0.");
+			 }	
+				} else {
+					pantalla.setText(pantalla.getText() + digito);
+					}
 			nuevaOperacion = false;
 
 		}
@@ -101,11 +104,7 @@ public class CalculadoraActivity extends Activity implements View.OnClickListene
 	 */
 	public void operacionPulsado(String oper) {
 		if (oper.equals("="))
-			try{
 				calcularResultado();
-			}catch(NumberFormatException nfe){
-				pantalla.setText("ERROR");
-			}
 		else if (oper.equals("C")) {
 			resultado = 0;
 			pantalla.setText("0");
