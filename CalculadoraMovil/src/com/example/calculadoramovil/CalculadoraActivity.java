@@ -103,8 +103,14 @@ public class CalculadoraActivity extends Activity implements View.OnClickListene
 	 * @param oper
 	 */
 	public void operacionPulsado(String oper) {
-		if (oper.equals("="))
+		if (oper.equals("=")){
+			try{
 				calcularResultado();
+			}catch(NumberFormatException nfe){
+				pantalla.setText("ERROR");
+			}
+		}
+				
 		else if (oper.equals("C")) {
 			resultado = 0;
 			pantalla.setText("0");
