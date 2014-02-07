@@ -16,7 +16,7 @@ import android.widget.EditText;
  */
 public class CalculadoraActivity extends Activity implements View.OnClickListener{
 	
-	ButtonNumerico btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0,btnPunto;
+	Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0,btnPunto;
 	ButtonOperacion	btnMas, btnMenos, btnMulti, btnDiv, btnC, btnIgual;
 	EditText pantalla;
 	boolean nuevaOperacion = true;
@@ -65,7 +65,6 @@ public class CalculadoraActivity extends Activity implements View.OnClickListene
 		btnPunto.setOnClickListener(this);
 		btnC.setOnClickListener(this);
 		btnIgual.setOnClickListener(this);
-		
 		
 	}
 	
